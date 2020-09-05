@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>How-circular-economy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="CSS/normalize.css"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Noto+Serif+JP:wght@700&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+    <style>
+        .wrapper {
+            background: #F5F5D6;
+            max-width: 1080px;
+            height: 900px;
+            margin: 0 auto;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .transition {
+            transition: 0.4s;
+        }
+
+        .menu {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding: 0 0 0 2px;
+        }
+
+        .menu.active {
+            background: #F5F5D6;
+        }
+
+        .menu ul {
+            position: absolute;
+            right: 75%;
+            top: 0px;
+            background: rgba(255, 255, 255, .8);
+            width: 460px;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .menu.active ul {
+            opacity: 1;
+            max-height: 400px;
+        }
+
+        .menu ul li a {
+            padding: 10px 12px;
+            color: #644A4A;
+            list-style: none;
+
+        }
+
+        .menu ul li a:hover {
+            background: #89C5CC;
+        }
+
+        ul,li {
+            padding: 5px;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+        .bar {
+            width: 36px;
+            height: 6px;
+            background: #89C5CC;
+            margin: 6px 30px;
+            border-radius: 2px;
+        }
+        .active .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+            transform: rotate(-45deg) translate(-9px, 7px);
+        }
+
+        .active .bar2 {
+            opacity: 0;
+        }
+
+        .active .bar3 {
+            -webkit-transform: rotate(45deg) translate(-9px, -8px);
+            transform: rotate(45deg) translate(-9px, -8px);
+        }
+
+        h1 {
+            color: #268B7D;
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 50px;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 33%;
+            width: 2px;
+            height: 52px;
+            background: #89c5cc;
+        }
+
+        .search {
+            position: absolute;
+            top: 18%;
+            left: 68%;
+            width: 40px;
+            height: 40px;
+            background: url("images/search.png");
+            background-size: cover;
+            border: transparent;
+        }
+
+        .container ::placeholder {
+            color: rgb(206, 204, 204);
+            font-size: 24px;
+        }
+
+        .form-control {
+            padding: 0px 25px;
+            border: 7px #89c5cc solid;
+            width: 500px;
+            height: 70px;
+            margin: auto;
+            border-radius: 15px;
+
+        }
+
+        .b-adidas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .adidas {
+            width: 900px;
+            height: 800px;
+        }
+        @media screen and (max-width: 768px){
+            .logo{
+                width: 70px;
+                height: 70px;
+            }
+            h1{
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <embed class="logo" src="images/logo.svg" type="">
+            <div class="menu transition">
+                <div class="bar bar1 transition"></div>
+                <div class="bar bar2 transition"></div>
+                <div class="bar bar3 transition"></div>
+                <ul class="transition">
+                    <li><a class="transition" href="menu_circular_economy.html">Home</a></li>
+                    <li><a class="transition" href="Why_circular.html">Why</a></li>
+                    <li><a class="transition" href="How_circular_economy.html">How</a></li>
+                    <li><a class="transition" href="B&A.html">Before & After</a></li>
+                </ul>
+            </div>
+        </header>
+        <h1>有哪些企業跟上循環經濟的腳步？</h1>
+        <div class="container">
+            <input type="text" placeholder="企業搜尋" class="form-control">
+            <button id="search" class="search"></button>
+
+        </div>
+    </div>
+    <div class="b-adidas" id="b-adidas">
+        <img src="images/adidas.png" id="adidas" class="adidas" alt="">
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(".menu").click(function () {
+            $(this).toggleClass('active');
+        });
+    </script>
+    <script>
+        // $("#search").click(function () {
+        //     $("#adidas").toggle("active")
+        // })
+        $("body").keydown(function () {
+            let keycode = event.which
+            if (keycode == 49) {
+                $("#b-adidas").css("opacity", "1")
+                $("#adidas").css("transform", "scale(1)")
+                $("#adidas").css("opacity", "1")
+            }
+        })
+        $("body").keydown(function () {
+            let keycode = event.which
+            if (keycode == 50) {
+                $("#b-adidas").css("opacity", "0")
+                $("#adidas").css("transform", "scale(0.8)")
+                $("#adidas").css("opacity", "0")
+            }
+        })
+    // $("b-adidas").keydown(function(event){
+    //   let keycode=event.which
+    //   switch(keycode){
+    //     case 13: 
+    //       $("#adidas").css("display","block")
+    //       break;
+    </script>
+</body>
+
+</html>

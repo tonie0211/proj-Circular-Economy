@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Circular Economy</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Noto+Serif+JP:wght@700&family=Playfair+Display:ital@1&display=swap"
+    rel="stylesheet">
+  <style>
+    .wrapper {
+      background: #F5F5D6;
+      max-width: 1080px;
+      margin: 0 auto;
+      font-family: 'Noto Sans TC', sans-serif;
+
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding: 0 0 0 2px;
+        }
+
+        .menu.active {
+            background: #F5F5D6;
+        }
+
+        .menu ul {
+            position: absolute;
+            right: 75%;
+            top: 0px;
+            background: rgba(255, 255, 255, .8);
+            width: 460px;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .menu.active ul {
+            opacity: 1;
+            max-height: 400px;
+        }
+
+        .menu ul li a {
+            display: block;
+            padding: 10px 12px;
+            list-style: none;
+            color: #644A4A;
+        }
+
+        .menu ul li a:hover {
+            background: #89C5CC;
+        }
+
+        ul,
+        li {
+            padding: 5px;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+        .bar {
+            width: 36px;
+            height: 6px;
+            background: #89C5CC;
+            margin: 6px 30px;
+            border-radius: 2px;
+        }
+
+        .active .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+            transform: rotate(-45deg) translate(-9px, 7px);
+        }
+
+        .active .bar2 {
+            opacity: 0;
+        }
+
+        .active .bar3 {
+            -webkit-transform: rotate(45deg) translate(-9px, -8px);
+            transform: rotate(45deg) translate(-9px, -8px);
+        }
+
+    .h-text {
+      text-align: center;
+    }
+
+    h1 {
+      color: #268B7D;
+      margin: 0;
+    }
+
+    h3 {
+      color: #89C5CC;
+      letter-spacing: 2px
+    }
+
+    .h-pic {
+      max-width: 100%;
+      width: 1020px;
+      margin: 0 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+      }
+      .h-pic{
+        width: 420px;
+        margin: auto;
+      }
+    }
+    .box-flex {
+      display: flex;
+      margin: 0;
+    }
+
+    .box1 {
+      background: #3E77AF;
+      width: 540px;
+      height: 580px;
+      margin: 30px 0 0 30px;
+      position: relative;
+    }
+
+    .color-block1 {
+      width: 800px;
+      height: 500px;
+      position: absolute;
+      right: -15%;
+      bottom: 10%;
+    }
+
+    .p-1 {
+      color: #F5F5D6;
+      font-size: 80px;
+      position: absolute;
+      left: 20%;
+      top: 40%
+    }
+
+
+    .box2 {
+      width: 540px;
+      height: 580px;
+      margin: 30px 30px 0 0;
+      background: #fff;
+      position: relative;
+      padding: 20px;
+    }
+
+    .p-2 {
+      /* width: 540px; */
+      height: 580px;
+      font-size: 16px;
+      position: absolute;
+      bottom: -15%;
+      left: 10%;
+      color: #644A4A;
+      margin: 0 10px 0 10px;
+
+    }
+
+    .p-2R {
+      display: none;
+    }
+
+    .btn-more {
+      padding: 7px;
+      background: rgb(194, 193, 193);
+      border-radius: 13px;
+      text-decoration: none;
+      color: #644A4A;
+      position: absolute;
+      right: 10%;
+      bottom: 15%;
+      transition: .5s;
+    }
+
+    .btn-more:hover {
+      background: #268B7D;
+      color: #89C5CC;
+    }
+
+    @media screen and (max-width:768px) {
+      .box1 {
+        width: 240px;
+        height: 280px;
+        margin: 30px 0 0 30px;
+        position: relative;
+      }
+
+      .color-block1 {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        right: -45%;
+        bottom: 3%;
+      }
+
+      .p-1 {
+        color: #F5F5D6;
+        font-size: 20px;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+      }
+
+      .box2 {
+        width: 240px;
+        height: 280px;
+        margin: 30px 30px 0 0;
+        background: #fff;
+        position: relative;
+        padding: 20px;
+      }
+
+      .p-2 {
+        display: none;
+
+      }
+
+      .p-2R {
+        display: block;
+        font-size: 12px;
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        color: #644A4A;
+        margin: 0 10px 0 10px;
+      }
+
+      .btn-more {
+        padding: 5px;
+        background: rgb(194, 193, 193);
+        border-radius: 14px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #644A4A;
+        position: absolute;
+        right: 7%;
+        bottom: 5%;
+        transition: .5s;
+      }
+    }
+
+    .box3 {
+      width: 540px;
+      height: 450px;
+      margin: 0 0 30px 30px;
+      background: #F18968;
+      position: relative;
+      transition: .5s;
+    }
+
+    .box3:hover {
+      background: #f3653a;
+
+    }
+
+    .icon-refresh {
+      width: 110px;
+      height: 110px;
+      color: #fff;
+      position: absolute;
+      left: 12%;
+      top: 13%;
+    }
+
+    .p-3 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      position: absolute;
+      top: 35%;
+      left: 18%;
+    }
+
+    .box4 {
+      width: 540px;
+      height: 450px;
+      margin: 0 30px 30px 0;
+      background: #EFB34C;
+      position: relative;
+      transition: .5s;
+    }
+
+    .box4:hover {
+      background: #f3a41b;
+
+    }
+
+    .icon-recycle {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 15%;
+      left: 13%;
+    }
+
+    .p-4block {
+      max-width: 100%;
+      width: 1020px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .p-4 {
+      color: #644A4A;
+      font-size: 45px;
+      font-weight: 700;
+      padding: 0 !important;
+    }
+
+    .p-4R {
+      display: none;
+    }
+
+    @media screen and (max-width:786px) {
+      .box3 {
+        width: 240px;
+        height: 150px;
+        margin: 0 0 30px 30px;
+        background: #F18968;
+        position: relative;
+        transition: .5s;
+      }
+
+      .icon-refresh {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        position: absolute;
+        left: 8%;
+        top: 3%;
+      }
+
+      .p-3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        top: 18%;
+        left: 6%;
+      }
+
+      .box4 {
+        width: 240px;
+        height: 150px;
+        margin: 0 30px 30px 0;
+        background: #EFB34C;
+        position: relative;
+        transition: .5s;
+      }
+
+      .icon-recycle {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 8%;
+        top: 3%;
+      }
+
+      .p-4 {
+        display: none;
+      }
+
+      .p-4R {
+        color: #644A4A;
+        font-size: 36px;
+        display: block;
+        margin-left: 30px;
+      }
+    }
+
+    .square1 {
+      background: #F18968;
+      width: 40px;
+      height: 13px;
+    }
+
+    .p-5 {
+      color: #644A4A;
+      padding: 15px 80px 0 0 !important;
+    }
+
+    .p-6Flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .re-setting {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #644A4A;
+      border-radius: 20px;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    .p-6 {
+      color: #644A4A;
+      margin: 20px 0 0 0 !important;
+      font-size: 24px;
+    }
+
+    .p1p2-flex {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 30px;
+    }
+
+    .p1-flex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pic01 {
+      width: 430px;
+      height: 230px;
+      margin-top: 30px;
+    }
+
+    .p1-text {
+      color: #644A4A;
+      text-decoration: underline;
+    }
+    .p1-textR{
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      .square1 {
+        display: none;
+      }
+
+      .p-4block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .p-5 {
+        display: none;
+      }
+
+      .re-setting {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #644A4A;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 30px;
+      }
+
+      .p-6 {
+        color: #644A4A;
+        margin-top: 15px !important;
+        font-size: 24px;
+      }
+
+      .p1p2-flex {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px;
+      }
+
+      .p1-flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .pic01 {
+        width: 200px;
+        height: 100px;
+        margin-top: 30px;
+      }
+      .p1-text {
+        display: none;
+      }
+    }
+
+    .icons-flex {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+
+    .Rent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .rent {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #644A4A;
+      border-radius: 20px;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    .Teamwork {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .teamwork {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #644A4A;
+      border-radius: 20px;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    .Buildings {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .buildings {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #644A4A;
+      border-radius: 20px;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width:768px) {
+      .p-6 {
+        font-size: 16px;
+      }
+
+      .rent {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #644A4A;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 50px;
+      }
+
+      .teamwork {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #644A4A;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 50px;
+      }
+
+      .buildings {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #644A4A;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 50px;
+      }
+    }
+
+    .p3-flex {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 80px;
+    }
+
+    .pic03 {
+      width: 280px;
+      height: 150px;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .p3-flex {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 80px auto;
+      align-items: center;
+    }
+      .pic03 {
+        width: 350px;
+        height: 200px;
+        margin-top: 30px;
+      }
+      .p1-textR{
+        display: block;
+        color: #644A4A;
+        text-decoration: underline;
+        font-size: 12px;
+      }
+    }
+
+    .series2 {
+      width: 800px;
+      height: 50px;
+      background: #fff;
+      border-radius: 30px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      position: relative;
+      transition: .5s;
+    }
+
+    .series2:hover {
+      background: gray;
+    }
+
+    .series2-text {
+      color: #644A4A;
+      font-size: 24px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      transition: .5s;
+    }
+    .series2-textR{
+      display: none;
+    }
+    .series2-text:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .square2 {
+      background: #EFB34C;
+      width: 40px;
+      height: 13px;
+    }
+
+    .e-trash {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #644A4A;
+      border-radius: 20px;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    .p-7 {
+      color: #644A4A;
+      margin-top: 5px;
+      font-size: 24px;
+    }
+
+    .p6p7-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+  @media screen and (max-width: 768px){
+    .series2 {
+      width: 400px;
+      height: 50px;
+      background: #fff;
+      border-radius: 30px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      position: relative;
+      transition: .5s;
+    }
+    .square2 {
+     display: none;
+    }
+    .e-trash {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #644A4A;
+      border-radius: 15px;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    .p-7 {
+      color: #644A4A;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+    .series2-text{
+      display: none;
+    }
+    .series2-textR{
+      font-size: 17px;
+      display: block;
+      color: #644A4A;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      transition: .5s;
+    }
+    .series2-textR:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+}
+    .footer {
+      background: #F18968;
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    .f-logo {
+      width: 200px;
+      /* height: 100px; */
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 10%;
+    }
+
+    .copyright {
+      color: #fff;
+      font-size: 12px;
+      position: absolute;
+      left: 50%;
+      top: 70%;
+      transform: translate(-50%, -70%);
+
+    }
+
+    #goTop {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #89C5CC;
+      opacity: .5;
+      cursor: pointer;
+    }
+
+    .topT {
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @media screen and (max-width: 768px){
+      .f-logo {
+      width: 150px;
+
+    }
+
+    .copyright {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+    }
+    #goTop {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #89C5CC;
+      opacity: .5;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .topT {
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <a class="btn-top" id="goTop">
+      <p class="topT">Top</p>
+    </a>
+    <header>
+      <embed src="images/logo.svg" class="logo"></embed>
+      <div class="menu transition">
+        <div class="bar bar1 transition"></div>
+        <div class="bar bar2 transition"></div>
+        <div class="bar bar3 transition"></div>
+        <ul class="transition">
+          <li><a class="transition" href="menu_circular_economy.html">Home</a></li>
+          <li><a class="transition" href="Why_circular.html">Why</a></li>
+          <li><a class="transition" href="How_circular_economy.html">How</a></li>
+          <li><a class="transition" href="B&A.html">Before & After</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="h-text">
+        <h1>循環經濟</h1>
+        <h3>Circular Economy</h3>
+        <embed src="images/home-pic.svg" class="h-pic">
+    </section>
+    <article>
+      <div class="box-flex">
+        <div class="box1"><embed src="images/color block 1.svg" class="color-block1">
+          <p class="p-1">導讀文章</p>
+        </div>
+        <div class="box2">
+          <p class="p-2">
+            看看你的手機，想想它的一生：<br>
+            這支不到200克的手機，先在工廠裡<br>
+            消耗了將近2公斤（10倍）的資源，<br>
+            才在手機店和你相遇，<br>
+            而與你相伴不到2年，<br>
+            它又將投入垃圾場的懷抱。<br>
+            這就是「線性經濟」：<br>
+            一條「開採 > 製造 > 銷售 > 使用 > 丟棄」的直線路徑。<br>
+            現在有一種全新的經濟體系，<br>
+            字典裡沒有「廢棄」兩個字，<br>
+            所有今日的產品，<br>
+            都將變成明日的資源—跟著我們一起認識「循環經濟」，<br>
+            走向零浪費時代吧！</p><a class="btn-more" href="">閱讀更多</a>
+          <p class="p-2R">
+            看看你的手機，想想它的一生：<br>
+            這支不到200克的手機，先在工廠裡<br>
+            消耗了將近2公斤（10倍）的資源，<br>
+            才在手機店和你相遇，<br>
+            而與你相伴不到2年，<br>
+            它又將投入垃圾場的懷抱。<br>
+            這就是「線性經濟」<br>
+          </p><a class="btn-more" href="">閱讀更多</a>
+        </div>
+      </div>
+      <div class="box-flex">
+        <a class="box3" id="box3"><embed class="icon-refresh" src="images/refresh.svg" alt="">
+          <p class="p-3">源頭設計:<br>
+            從一開始的設計<br>
+            就追求零廢棄</p>
+        </a>
+        <div class="box4"><embed class="icon-recycle" src="images/recycling.svg" type="">
+          <p class="p-3">末端回收:<br>
+            產品不再壽終正寢<br>
+            賦予廢棄物新生命</p>
+        </div>
+      </div>
+      <div class="p-4block">
+        <p class="p-4">源頭設計:<br>
+          從一開始的設計,<br>
+          就追求零廢棄</p>
+        <p class="p-4R">源頭設計:<br>
+          從一開始的設計,<br>
+          就追求零廢棄</p>
+        <div>
+          <div class="square1"></div>
+          <p class="p-5">線性經濟之所以造成浪費，<br>
+            是因為從一開始的設計，<br>
+            就註定了產品將會被丟棄。<br>
+            一種「全盤考量整個系統」<br>
+            的新設計思維已勢在必行，<br>
+            以下分別從產品、商業模式、產業和城市四種層級，<br>
+            帶大家探討如何重新設計，從源頭就追求零廢棄。</p>
+        </div>
+      </div>
+      <div class="p-6Flex">
+        <embed class="re-setting" src="images/refresh setting.svg">
+        <p class="p-6">產品-3R原則</p>
+      </div>
+      <div class="p1p2-flex">
+        <div class="p1-flex">
+          <img class="pic01" src="images/pic01.jpg" alt="">
+          <a href="" class="p1-text">這支拆裝螢幕只需30秒的手機，有著改變整個產業的大願景—<br>
+            讓你把手機「用好用滿」</a>
+            <a href="" class="p1-textR">這支拆裝螢幕只需30秒的手機，有著<br>改變整個產業的大願景—
+              讓你把手機「用好用滿」</a>
+        </div>
+        <div class="p1-flex">
+          <img class="pic01" src="images/pic02.jpg" alt="">
+          <a href="" class="p1-text">「大自然會怎麼設計地毯？」全球最大地毯商用仿生學和循環<br>
+            經濟，要在5年內達到零廢棄</a>
+            <a href="" class="p1-textR">「大自然會怎麼設計地毯？」全球最大<br>地毯商用仿生學和循環
+              經濟，要在5年內達到零廢棄</a>
+        </div>
+      </div>
+      <div class="icons-flex">
+        <div class="Rent">
+          <embed class="rent" src="images/for-rent.svg" type="">
+          <p class="p-6">商業-只租不賣</p>
+        </div>
+        <div class="Teamwork">
+          <embed class="teamwork" src="images/teamwork.svg" type="">
+          <p class="p-6">產業-合作共生</p>
+        </div>
+        <div class="Buildings">
+          <embed class="buildings" src="images/buildings.svg" type="">
+          <p class="p-6">城市-循環城市</p>
+        </div>
+      </div>
+      <div class="p3-flex">
+        <div class="p1-flex">
+          <img class="pic03" src="images/pic03.jpg" alt="">
+          <a class="p1-text" href="">這間「只租不賣」的嬰兒服品牌,讓寶寶<br>有穿不完的可愛衣服、爸媽再也不用煩惱<br>舊衣物</a>
+          <a class="p1-textR" href="">這間「只租不賣」的嬰兒服品牌,讓寶寶有穿不完的可愛衣服、爸媽<br>再也不用煩惱舊衣物</a>
+        </div>
+        <div class="p1-flex">
+          <img class="pic03" src="images/pic04.jpg" alt="">
+          <a class="p1-text" href="">這裡曾是4億頭豬的生命終結站,現在變<br>身魚菜共生、麵包與啤酒
+            飄香的新樂園</a>
+            <a class="p1-textR" href="">這裡曾是4億頭豬的生命終結站,現在變身魚菜共生、麵包與啤酒
+              飄<br>香的新樂園</a>
+        </div>
+        <div class="p1-flex">
+          <img class="pic03" src="images/pic05.jpg" alt="">
+          <a class="p1-text" href="">從咖啡廳到整座城市，阿姆斯特丹打造<br>「循環城市」的最佳實驗室</a>
+          <a class="p1-textR" href="">從咖啡廳到整座城市，阿姆斯特丹打造「循環城市」的最佳實驗室</a>
+        </div>
+      </div>
+      <div class="series2">
+        <a href="" class="series2-text">系列二: 末端回收</a>
+        <a href="" class="series2-textR">系列二: 末端回收</a>
+      </div>
+      <div class="p-4block">
+        <p class="p-4">末端回收：<br>
+          產品不再壽終正寢，<br>
+          賦予廢棄物新生命</p>
+          <p class="p-4R">末端回收：<br>
+            產品不再壽終正寢，<br>
+            賦予廢棄物新生命</p>
+        <div>
+          <div class="square2"></div>
+          <p class="p-5">每個產品都有「壽終正寢」的一天，<br>
+            最終會在垃圾場裡劃下句點。<br>
+            但在循環經濟的概念裡，<br>
+            當產品失去原先的功能，<br>
+            並不代表生命的結束，<br>
+            而是另一種新用途的開始。<br>
+            一起到掩埋場尋寶，<br>
+            看下面各種廢棄物，還有哪些「神用途」？</p>
+        </div>
+      </div>
+      <div class="p-6Flex">
+        <embed class="e-trash" src="images/electronic trash.svg">
+        <p class="p-6">電子垃圾</p>
+        <p class="p-7">用「城市採礦」回收煉金</p>
+      </div>
+      <div class="p1p2-flex">
+        <div class="p1-flex">
+          <img class="pic01" src="images/pic06.jpg" alt="">
+          <a href="" class="p1-text">一年幾千噸的電子廢棄物，是垃圾山還是「礦山」？長期而言<br>，重新設計供應鏈才是關鍵</a>
+          <a href="" class="p1-textR">一年幾千噸的電子廢棄物，是垃圾山<br>還是「礦山」？長期而言，重新設計供<br>應鏈才是關鍵</a>
+        </div>
+        <div class="p1-flex">
+          <img class="pic01" src="images/pic07.jpg" alt="">
+          <a href="" class="p1-text">「可以用一輩子的行動電源！紅點設計大獎得主，讓舊手機電<br>池
+            擁有燦爛的第二春 </a>
+            <a href="" class="p1-textR">「可以用一輩子的行動電源！紅點設<br>計大獎得主，讓舊手機電池
+              擁有燦爛的<br>第二春 </a>
+        </div>
+      </div>
+      <div class="icons-flex">
+        <div class="Rent">
+          <embed class="rent" src="images/tire.svg" type="">
+          <p class="p-6">商業-只租不賣</p>
+        </div>
+        <div class="Teamwork">
+          <embed class="teamwork" src="images/broken-bottle.svg" type="">
+          <p class="p-6">產業-合作共生</p>
+        </div>
+        <div class="Buildings">
+          <embed class="buildings" src="images/Biomedical Waste.svg" type="">
+          <p class="p-6">城市-循環城市</p>
+        </div>
+      </div>
+      <div class="p3-flex">
+        <div class="p1-flex">
+          <img class="pic03" src="images/pic08.jpg" alt="">
+          <a class="p1-text" href="">當人人視廢棄物為燙手山芋，這間新創<br>「把垃圾當寶貝」：用設計顛覆你對環<br>保商品的想像</a>
+          <a class="p1-textR" href="">當人人視廢棄物為燙手山芋，這間新創「把垃圾當寶貝」：用設計顛<br>覆你對環保商品的想像</a>
+          
+        </div>
+        <div class="p1-flex">
+          <img class="pic03" src="images/pic09.jpg" alt="">
+          <a class="p1-text" href="">當「酒矸倘賣無」 不再悲情，他用回收<br>廢玻璃做成台灣版的施華洛世奇，外銷全<br>世界</a>
+          <a class="p1-textR" href="">當「酒矸倘賣無」 不再悲情，他用回收廢玻璃做成台灣版的施華洛<br>世奇，外銷全世界</a>
+        </div>
+        <div class="p1-flex">
+          <img class="pic03" src="images/pic10.jpg" alt="">
+          <a class="p1-text" href="">你以為豬舍都又臭又髒嗎？打造養豬場<br>的循環經濟，豬有尊嚴，連豬糞大家都搶<br>著要</a>
+          <a class="p1-textR" href="">你以為豬舍都又臭又髒嗎？打造養豬場的循環經濟，豬有尊嚴，連<br>豬糞大家都搶著要</a>
+        </div>
+      </div>
+      <div class="series2">
+        <a href="" class="series2-text">回顧專題系列一:源頭設計</a>
+        <a href="" class="series2-textR">回顧專題系列一:源頭設計</a>
+      </div>
+    </article>
+    <footer>
+      <div class="footer">
+        <img class="f-logo" src="images/environmental_logo.png" alt="">
+        <p class="copyright"> Copyright&copy;Environmental Information Center All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script>
+    $(".menu").click(function () {
+      $(this).toggleClass('active');
+    });
+
+  </script>
+  <script>
+    $("#goTop").click(function () {
+      $("html").animate({
+        scrollTop: 0
+      })
+    })
+  </script>
+  <script>
+    $("#box3").click(function () {
+      $("html").animate({
+        scrolldown: 100
+      })
+    })
+  </script>
+</body>
+
+</html>
